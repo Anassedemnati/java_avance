@@ -16,9 +16,10 @@ public enum Animal {
 		System.out.println(a.toString());
 		Animal a3=Animal.valueOf("CHEVAL");
 		System.out.println(a3.toString());
+
 		for (Animal a4 : Animal.values()) {
 			System.out.println(a4.name());
-			
+
 		}
 		System.out.println(a.compareTo(a3));
 	}

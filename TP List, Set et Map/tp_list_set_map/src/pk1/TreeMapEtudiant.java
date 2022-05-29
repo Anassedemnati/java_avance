@@ -17,6 +17,8 @@ public class TreeMapEtudiant {
         }
         CinTreeMap.put("M605340",new Etudiant("Anass ","Demnati",6666,"M605340"));
     }
+
+
     //4.	Codez une fonction permettant d’afficher les étudiants (triés par CIN) ;
     public  void afficherParCin ()
     {
@@ -27,16 +29,19 @@ public class TreeMapEtudiant {
             System.out.println(entry.getKey()+"==>"+entry.getValue());
         }
     }
-    //2.	Codez une fonction permettant de rechercher le premier étudiant ;
-public Etudiant firstStudent()
-{
-    return CinTreeMap.get(CinTreeMap.firstKey());
 
-}
-//3.	Codez une fonction permettant de rechercher le dernier étudiant ;
+    //2.	Codez une fonction permettant de rechercher le premier étudiant ;
+    public Etudiant firstStudent()
+    {
+        return CinTreeMap.get(CinTreeMap.firstKey());
+    }
+
+
+    //3.	Codez une fonction permettant de rechercher le dernier étudiant ;
     public Etudiant dernierEtudiant(){
         return CinTreeMap.get(CinTreeMap.lastKey());
     }
+
     //5.	Codez une fonction permettant de retourner les étudiants dont les CINs sont
     // strictement inférieures à celle fournie en premier paramètre et
     // supérieures ou égales à celle fournie en second paramètre ;
